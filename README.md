@@ -21,7 +21,7 @@ NOT READY TO PRINT: Undergoing evaluation. See the new MAX v2 below, and check o
 <br />
 <p align="center">
   <https://github.com/0ndsk4/VoronUsers/tree/0ndsk4/printer_mods/0ndsk4/Nevermore_Air_Filter">
-    <img src="images/New_Nevermore_Max v33.png" alt="Logo" width="1698" height="956">
+    <img src="images/New_Nevermore_Max v33.png" alt="Logo">
   </a>
 
   <h3 align="center">Nevermore Max Air Filter</h3>
