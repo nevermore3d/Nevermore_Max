@@ -24,14 +24,14 @@ NOT READY TO PRINT: Undergoing evaluation. See the new MAX v2 below, and check o
     <img src="images/New_Nevermore_Max v33.png" alt="Logo">
   </a>
 
-  <h3 align="center">Nevermore Max Air Filter</h3>
+  <h3 align="center">Nevermore Max Air Filter (v2 pictured above, v1 pictured below)</h3>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#About-The-Nevermore">About Nevermore Max</a>
+      <a href="#About-The-Nevermore">About Nevermore Max (Version 1)</a>
       <ul>
         <li><a href="#Why">Why Nevermore?</a></li>
 		<li><a href="#But-we-already-have-a-filtered-exhaust">But we already have a filtered exhaust?</a></li>
