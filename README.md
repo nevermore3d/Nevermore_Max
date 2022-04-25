@@ -16,12 +16,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-DO NOT MAKE THE MAX CURRENTLY, A NEW VERSION IS COMING AND SOME KEY THINGS ARE CHANGING.
+NOT READY TO PRINT: Undergoing evaluation. See the new MAX v2 below, and check out the RC1! Feedback appreciated!
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <https://github.com/0ndsk4/VoronUsers/tree/0ndsk4/printer_mods/0ndsk4/Nevermore_Air_Filter">
-    <img src="images/logo.png" alt="Logo" width="1117" height="830">
+    <img src="images/New_Nevermore_Max v33.png" alt="Logo" width="1698" height="956">
   </a>
 
   <h3 align="center">Nevermore Max Air Filter</h3>
