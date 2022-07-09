@@ -93,9 +93,19 @@ Why a Max when the Micro works well? The little bugger is an easy print, nimble,
 	carbon changes a lot! Having the filter unit outside of the printer allows for the
 	carbon to be a few degrees cooler than the printer. That does much for longevity.  
 	   
-	5. We haz to needz **TECHz**: More space for cooler gadgets. Ever wondered when its time to swap carbon? Well, on the max you could add VOC sensors to both intake and exhaust and measure how well the filter is doing its job! Thanks to Dr Dave there are even data on which sensors reliably detect the aromatic VOCs we strive to catch (a lot of sensors hardly detect extrusion VOCs at all as theyre intended for other applications). I've chosen to divide the project into a Basic version with just hepa+carbon+fan, but entirely upgradeable to the Pro version including VOC sensors (temp, humidity, filter efficiency), LED/Screen/Controller board, servo carbon sealing for (optimal carbon longevity with no room VOC carbon depletion) and a 4010 exhaust (negative pressure+vent control).  
+	5. We haz to needz **TECHz**: More space for cooler gadgets. Ever wondered when 
+	its time to swap carbon? Well, on the max you could add VOC sensors to both intake
+	and exhaust and measure how well the filter is doing its job! Thanks to Dr Dave
+	there are even data on which sensors reliably detect the aromatic VOCs we strive
+	to catch (a lot of sensors hardly detect extrusion VOCs at all as theyre intended
+	for other applications). I've chosen to divide the project into a Basic version
+	with just hepa+carbon+fan, but entirely upgradeable to the Pro version 
+	including VOC sensors (temp, humidity, filter efficiency), LED/Screen
+	/Controller board, servo carbon sealing for (optimal carbon longevity with no
+	room VOC carbon depletion) and a 4010 exhaust (negative pressure+vent 
+	control).  
 
-	6. Less **NOISE**: Lets face it. A high powered 5015 creates some noise. Two creates
+	7. Less **NOISE**: Lets face it. A high powered 5015 creates some noise. Two creates
 	even more. By increasing the size of the carbon filter, decreasing pressure drop,
 	we can run the filter fan slower while still getting the same air flow. We can 
 	run the fan at a higher rpm:s and clean the chamber in a jiffy as well.  
