@@ -77,7 +77,7 @@ Why a Max when the Micro works well? The little bugger is an easy print, nimble,
 	3. We catch **PARTICLES**: 3D printer extrusion creates both VOCs and particles. 
 	The micro focuses on VOCs, as thats what give off the worst smell and has direct 
 	toxic effects, and are difficult to catch once outside of the print chamber. 
-	Yet again, PM particles are among the leading causes of death in the word and 
+	Yet again, PM particles are among the leading causes of death in the world and 
 	shouldnt be ignored. I've advocated using a regular room-size hepa for particles 
 	in conjunction with a micro before, but with the Max a hepa filtration system is
 	 built in. 99+ per cent of particles creat6ed by your printer will be removed 
