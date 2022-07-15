@@ -132,8 +132,11 @@ Mid and back panels are now 3D printed!
 
 **SEALING**
 *2mm* **neoprene/silicone/rubber *sponge cord*** (~2meters). The *soft and squishy kind*, Shore 00 range hardness (anything around 50 +-15 will work well). 
+
 *3mm* **neoprene/silicone/rubber sponge cord** (~1meter).
+
 RTV (preferably clear or in the color of your printed panels (or side shrouds, if not using 2mm spong cord)
+
 *5-6mm* wide **Closed cell foam tape** *or* **self expanding PU tape**(mainly for sealing of the back panel or possibly under the front panel if not using 3mm sponge cord - not too thick, made to cover a ~1mm gap or so).
 
 
