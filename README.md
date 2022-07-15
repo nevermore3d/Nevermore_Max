@@ -130,7 +130,8 @@ Mid and back panels are now 3D printed!
 **FANS**
 * CENTER fan: has two options. The expensive choice is the **Sanyo 9TD12P6G001**. A 70x20mm radial blower capable of over 500Pa of static pressure or >40cfm, excellent build quality and made to work in up to 70C temperatures, as well as low noise capability. Its very pricey ($50), and has been hard to get hold of during the chip shortage. The other option is the **DELTA BFB0712HF 65mm GPU fan.** which was originally made to push alot of air through restrictive and hot 1060 grahics card coolers, and should hold upp well for this similar job. On Ali they go from as low as $5 up to about $15, and are thus alot more affordable and practically always in stock. They also perform *almost* as well as the Sanyo.
 
-**SEALING**
+## **SEALING**
+
 *2mm* **neoprene/silicone/rubber *sponge cord*** (~2meters). The *soft and squishy kind*, Shore 00 range hardness (anything around 50 +-15 will work well). 
 
 *3mm* **neoprene/silicone/rubber sponge cord** (~1meter).
