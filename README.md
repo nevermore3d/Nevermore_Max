@@ -20,7 +20,9 @@
 
 
 _300x300mm printbed minimum!_
-**0.2 layers, 0.4 nozzle recommended. 0.6+Aarachnae under evaluation**
+
+
+**0.2 layers, 0.4 nozzle recommended [0.6+Aarachnae under evaluation]**
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
