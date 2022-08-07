@@ -16,7 +16,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-IN BETA: Undergoing evaluation. Feedback appreciated! 300x300mm printbed minimum required!
+BETA FILES AND CAD ARE ALL ONLINE 300x300mm printbed minimum required!
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
