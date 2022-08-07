@@ -21,7 +21,7 @@ IN BETA: Undergoing evaluation. Feedback appreciated! 300x300mm printbed minimum
 <br />
 <p align="center">
   <https://github.com/0ndsk4/VoronUsers/tree/0ndsk4/printer_mods/0ndsk4/Nevermore_Air_Filter">
-    <img src="images/New_Nevermore_Max v33.png" alt="Logo">
+    <img src="images/Nevermore_Max_v2_Beta3.png" alt="Logo">
   </a>
 
   <h3 align="center">Nevermore Max 3D printer Air Filter</h3>
