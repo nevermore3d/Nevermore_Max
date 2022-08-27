@@ -23,6 +23,8 @@ _300x300mm printbed minimum!_
 
 
 **0.2 layers, 0.4 nozzle recommended [0.6+Aarachnae under evaluation]**
+
+For printing the frame, be aware of large print warping forces. For materials known to warp, extra adhesion precautions may be taken (lower z offset with horizontal compensation, nano adhesive, hotter bed or possibly chamber temps, etc). Also dont forget to **tape down your flex bed** or your flex bed may become the warping point instead.
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -168,8 +170,8 @@ RTV (preferably clear or in the color of your printed panels (or side shrouds, i
 *25mm* - **4x**
 *30mm* - **2x**
 *40mm* - **4x**
-*65mm* - **2x** (if four corner mounting points these should be 75mm too - these can be shortened/cut 75mm bolts in either case, as perfect thread at the tip doesnt matter)
-*75mm* - **2x** (for 2020 extrusion mounting)
+*65mm* - **2x** (if four corner mounting points these should be 70mm too, standard mounting hanging on a top extrusion is 65mm)
+*70mm* - **2x** (for 2020 extrusion mounting)
 
 **M3 ULTRA THIN HEAD** (Misumi CBSKE-8 or similar with flat head and head thickness <=0.8mm. For reference, a m3 shcs bolt head is 3mm and a bhcs bolt head is 1.6mm)
 *8mm* - 24X
