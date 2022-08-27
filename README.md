@@ -24,7 +24,7 @@ _300x300mm printbed minimum!_
 
 **0.2 layers, 0.4 nozzle recommended [0.6+Aarachnae under evaluation]**
 
-For printing the frame, be aware of large print warping forces. For materials known to warp, extra adhesion precautions may be taken (lower z offset with horizontal compensation, nano adhesive, etc). Also dont forget to **tape down your flex bed** or your flex bed may become the warping point instead.
+For printing the frame, be aware of large print warping forces. For materials known to warp, extra adhesion precautions may be taken (lower z offset with horizontal compensation, nano adhesive, hotter bed or possibly chamber temps, etc). Also dont forget to **tape down your flex bed** or your flex bed may become the warping point instead.
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
