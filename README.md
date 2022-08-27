@@ -158,7 +158,7 @@ RTV (preferably clear or in the color of your printed panels (or side shrouds, i
 ## BOLTS
 
 **M3 BHCS**
-*6mm* - **16x**
+*6mm* - **21x**
 *8mm* - **20x** (in most places, shcs will work too or even be preferable. 12 are visible at the side shrouds, the smaller profile can be nice at this spot)
 
 **M3 SHCS**
@@ -174,7 +174,7 @@ RTV (preferably clear or in the color of your printed panels (or side shrouds, i
 *70mm* - **2x** (for 2020 extrusion mounting)
 
 **M3 ULTRA THIN HEAD** (Misumi CBSKE-8 or similar with flat head and head thickness <=0.8mm. For reference, a m3 shcs bolt head is 3mm and a bhcs bolt head is 1.6mm)
-*8mm* - 24X
+*8mm* - 19X
 *6mm* - 2x (optional)
 
 ***OPTIONAL ELECTRONICS*****
