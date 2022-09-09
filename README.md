@@ -26,7 +26,7 @@ _300x300mm printbed minimum!_
 
 For printing the frame, be aware of large print warping forces. For materials known to warp, extra adhesion precautions may be taken (lower z offset with horizontal compensation, nano adhesive, hotter bed or possibly chamber temps, etc). Also dont forget to **tape down your flex bed** or your flex bed may become the warping point instead.
 
-**INSTALL GUIDE ADDED**
+**9/9: INSTALL GUIDE ADDED**
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
