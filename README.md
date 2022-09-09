@@ -25,6 +25,8 @@ _300x300mm printbed minimum!_
 **0.2 layers, 0.4 nozzle recommended [0.6+Aarachnae under evaluation]**
 
 For printing the frame, be aware of large print warping forces. For materials known to warp, extra adhesion precautions may be taken (lower z offset with horizontal compensation, nano adhesive, hotter bed or possibly chamber temps, etc). Also dont forget to **tape down your flex bed** or your flex bed may become the warping point instead.
+
+**INSTALL GUIDE ADDED**
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -212,8 +214,8 @@ Example Seller: https://www.aliexpress.com/item/1005001615722382.html<br>
 		* 
 
 ### Installation
-
-...TBD...
+The installation guide is under development, the alpha presentation below should take you 90% of the way!
+https://www.canva.com/design/DAFLeYZF86Y/dYEmVobjTJoAHgrsha3OjA/view?utm_content=DAFLeYZF86Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 
 ### Built with
 The Voron nevermore Air Filter was modelled in Fusion 360.
