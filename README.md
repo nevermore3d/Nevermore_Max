@@ -25,6 +25,8 @@ _300x300mm printbed minimum!_
 **0.2 layers, 0.4 nozzle recommended [0.6+Aarachnae under evaluation]**
 
 For printing the frame, be aware of large print warping forces. For materials known to warp, extra adhesion precautions may be taken (lower z offset with horizontal compensation, nano adhesive, hotter bed or possibly chamber temps, etc). Also dont forget to **tape down your flex bed** or your flex bed may become the warping point instead.
+
+**9/9: INSTALL GUIDE ADDED**
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -158,7 +160,7 @@ RTV (preferably clear or in the color of your printed panels (or side shrouds, i
 ## BOLTS
 
 **M3 BHCS**
-*6mm* - **16x**
+*6mm* - **21x**
 *8mm* - **20x** (in most places, shcs will work too or even be preferable. 12 are visible at the side shrouds, the smaller profile can be nice at this spot)
 
 **M3 SHCS**
@@ -174,7 +176,7 @@ RTV (preferably clear or in the color of your printed panels (or side shrouds, i
 *70mm* - **2x** (for 2020 extrusion mounting)
 
 **M3 ULTRA THIN HEAD** (Misumi CBSKE-8 or similar with flat head and head thickness <=0.8mm. For reference, a m3 shcs bolt head is 3mm and a bhcs bolt head is 1.6mm)
-*8mm* - 24X
+*8mm* - 19X
 *6mm* - 2x (optional)
 
 ***OPTIONAL ELECTRONICS*****
@@ -212,8 +214,8 @@ Example Seller: https://www.aliexpress.com/item/1005001615722382.html<br>
 		* 
 
 ### Installation
-
-...TBD...
+The installation guide is under development, the alpha presentation below should take you 90% of the way!
+https://www.canva.com/design/DAFLeYZF86Y/dYEmVobjTJoAHgrsha3OjA/view?utm_content=DAFLeYZF86Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 
 ### Built with
 The Voron nevermore Air Filter was modelled in Fusion 360.
