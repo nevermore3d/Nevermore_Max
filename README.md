@@ -68,7 +68,6 @@ For printing the frame, be aware of large print warping forces. For materials kn
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About Nevermore Max
 
@@ -133,6 +132,8 @@ Why a Max when the Micro works well? The little bugger is an easy print, nimble,
 ## Getting Started
 
 You're ready to build a Nevermore? Cool! The New Max is alot simpler to assemble compared to the first version!
+
+<div id="BOM"></div>
 
 ### BOM and Sourcing Guide
 For the sourcing guide, details and material list please check this: [BOM](BOM.md)
