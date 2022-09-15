@@ -1,5 +1,5 @@
-# BOM - Bill of Materials
-## BOM
+# BOM - Bill of Materials and Sourcing Guide
+## BOM - Things you can buy
 These are some examples on where you can buy those (in Germany). You can use different sellers or source everything elsewhere. We do not recommend these sellers or their products, and we are not related to them in any way. Before ordering, please make sure you covered the details for sourcing in the next section!
 | Parts            | Name                            | Link                                                                                                         |
 | ---------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -31,7 +31,7 @@ These are some examples on where you can buy those (in Germany). You can use dif
 |                  | Filters                         | https://de.aliexpress.com/item/1005001615722382.html                                                         |
 
 
-## Details for Sourcing
+## Sourcing Guide
 
 **PANELS**
 * Front panel in 6mm or 1/4" transparent plastic. Polycarbonate, PET or *molded* Acrylic will work fine. 

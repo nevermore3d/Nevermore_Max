@@ -57,7 +57,7 @@ For printing the frame, be aware of large print warping forces. For materials kn
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#BOM">BOM (AND IMPORTANT CARBON INFO)</a></li>
+        <li><a href="#BOM">BOM and Sourcing Guide</a></li>
         <li><a href="#installation">Installation</a></li>
 		<li><a href="#Built-with">Built with</a></li>
       </ul>
@@ -134,8 +134,8 @@ Why a Max when the Micro works well? The little bugger is an easy print, nimble,
 
 You're ready to build a Nevermore? Cool! The New Max is alot simpler to assemble compared to the first version!
 
-### BOM
-For the details and material list please check this: [BOM](BOM.md)
+### BOM and Sourcing Guide
+For the sourcing guide, details and material list please check this: [BOM](BOM.md)
 
 ### Installation
 The installation guide is under development, the alpha presentation below should take you 90% of the way!
