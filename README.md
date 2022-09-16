@@ -19,7 +19,7 @@
 **BETA FILES AND CAD ARE ALL ONLINE** 
 
 
-_300x300mm printbed minimum!_
+_300x300mm print bed minimum!_
 
 
 **0.2 layers, 0.4 nozzle recommended [0.6+Aarachnae under evaluation]**
@@ -93,9 +93,9 @@ Why a Max when the Micro works well? The little bugger is an easy print, nimble,
 	The micro focuses on VOCs, as thats what give off the worst smell and has direct 
 	toxic effects, and are difficult to catch once outside of the print chamber. 
 	Yet again, PM particles are among the leading causes of death in the world and 
-	shouldnt be ignored. I've advocated using a regular room-size hepa for particles 
-	in conjunction with a micro before, but with the Max a hepa filtration system is
-	 built in. 99+ per cent of particles creat6ed by your printer will be removed 
+	shouldn't be ignored. I've advocated using a regular room-size HEPA for particles 
+	in conjunction with a micro before, but with the Max a HEPA filtration system is
+	 built in. 99+ per cent of particles created by your printer will be removed 
 	 every pass and you wont add dirty air to your room or lungs.  
 	 
 	4. We need **COOLER**: 3D printing and 3D printing filtration require different things.
@@ -112,9 +112,9 @@ Why a Max when the Micro works well? The little bugger is an easy print, nimble,
 	its time to swap carbon? Well, on the max you could add VOC sensors to both intake
 	and exhaust and measure how well the filter is doing its job! Thanks to Dr Dave
 	there are even data on which sensors reliably detect the aromatic VOCs we strive
-	to catch (a lot of sensors hardly detect extrusion VOCs at all as theyre intended
+	to catch (a lot of sensors hardly detect extrusion VOCs at all as they are intended
 	for other applications). I've chosen to divide the project into a Basic version
-	with just hepa+carbon+fan, but entirely upgradeable to the Pro version 
+	with just HEPA+carbon+fan, but entirely upgradeable to the Pro version 
 	including VOC sensors (temp, humidity, filter efficiency), LED/Screen
 	/Controller board, servo carbon sealing for (optimal carbon longevity with no
 	room VOC carbon depletion) and a 4010 exhaust (negative pressure+vent 
@@ -125,26 +125,25 @@ Why a Max when the Micro works well? The little bugger is an easy print, nimble,
 	we can run the filter fan slower while still getting the same air flow. We can 
 	run the fan at a higher rpm:s and clean the chamber in a jiffy as well.  
 			    
-			  Convinced? Well, then the Max is for you!
+			  Convinced? Well, then the Max is for you!	
 			  
 			
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You're ready to build a Nevermore? Cool! The New Max is alot simpler to assemble compared to the first version!
+You're ready to build a Nevermore? Cool! The New Max is a lot simpler to assemble compared to the first version!
 
 <div id="BOM"></div>
 
 ### BOM and Sourcing Guide
-For the sourcing guide, details and material list please check this: [BOM](BOM.md)
+For the sourcing guide, details and material list please check this out: [BOM](BOM.md)
 
 ### Installation
-The installation guide is under development, the alpha presentation below should take you 90% of the way!
-https://www.canva.com/design/DAFLeYZF86Y/dYEmVobjTJoAHgrsha3OjA/view?utm_content=DAFLeYZF86Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+The installation guide is under development, the alpha presentation  should take you 90% of the way:
+[Installation Guide](https://www.canva.com/design/DAFLeYZF86Y/dYEmVobjTJoAHgrsha3OjA/view?utm_content=DAFLeYZF86Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ### Built with
-The Voron nevermore Air Filter was modelled in Fusion 360.
-* [Fusion 360](http://autodesk.com)
+The Voron nevermore Air Filter was modelled in [Fusion 360](http://autodesk.com).
 
 <!-- USAGE EXAMPLES -->
 
@@ -153,23 +152,23 @@ The Voron nevermore Air Filter was modelled in Fusion 360.
 
 At the end of the day, a fresh single-pass filtered exhaust (at brand new) has perhaps 70% VOC removal efficiency while still exhausting 30% of the nasty into the air you breathe. A recirculation filter achieving four passes at worn-in 50% efficiency could still remove 94% of the bas stuff. Or 99% at six passes!
 
-The number of passes you get all depends on how well you can seal your build chamber. The better sealed the chamber, the less room VOCs will circulate the carbon and deplete the filter too (VOCs from onions, wall paper or farts might not be as unhealthy as melted plastics VOCs, but they block space in the carbonall the same).
+The number of passes you get all depends on how well you can seal your build chamber. The better sealed the chamber, the less room VOCs will circulate the carbon and deplete the filter too (VOCs from onions, wall paper or farts might not be as unhealthy as melted plastics VOCs, but they block space in the carbon all the same).
 
 Some will have a hard time achieving a good chamber seal, which creates the biggest drawback of recirculation filters - they're air flow neutral. Meaning, as nothing pulls air into the chamber, air can diffuse freely to the outside through any remaining gaps. And that air could be <i>zero per cent</I> cleaned...
 
-To both have the cake and eat it (yes you can!), a Max can incorporate a 4010 exhaust fan, that is used to keep a slight negative pressure inside the chamber - air will still just get pulled _into_ the chamber through any remaning cracks, not leak outside. Dont ramp it up high, its meant to just barely evict air so that the majority of air flow through the filter is still recirculated.
+To both have the cake and eat it (yes you can!), a Max can incorporate a 4010 exhaust fan, that is used to keep a slight negative pressure inside the chamber - air will still just get pulled _into_ the chamber through any remaining cracks, not leak outside. Don't ramp it up high, its meant to just barely evict air so that the majority of air flow through the filter is still recirculated.
 
-Air evicted through the exhaust will at least have passed through the carbon filter, dust-filter and HEPA filter at least once (hopefully many more times) - so its a good security measure to have if you dont want to bet on your chamber being hermetically sealed.
+Air evicted through the exhaust will at least have passed through the carbon filter, dust-filter and HEPA filter at least once (hopefully many more times) - so its a good security measure to have if you don't want to bet on your chamber being hermetically sealed.
 
 
 ### But we already have a filtered exhaust?
 
 Yup, but aside from being one-pass, regular mesh carbon filters mainly consists of...mesh. And active carbon sprinkle - miniscule amounts, not meant to be used 24/7 in a 3d printer.
 
-Just running regular  air through a mesh filter will still depete it in weeks (carbon can't opt to just bind the nasty stuff). Filter exposed to air depletes it too, in time. Friggin' everything depletes carbon. Thats why we need *more*.
+Just running regular  air through a mesh filter will still deplete it in weeks (carbon can't opt to just bind the nasty stuff). Filter exposed to air depletes it too, in time. Friggin' everything depletes carbon. Thats why we need *more*.
 
 
-<b>The Nevermore</B> has a <i>kilo</i>, or two pounds, of active carbon. Not single-digit grams. And its can be sealed off from the surroundings, so when its not running, its not depleting. Any off-gassing between prints will likewise be kept inside the filter! And when is does run, it has alot of VOC binding capacity! At least a hundred times more compared to a generic solder fume carbon mesh filter. 
+<b>The Nevermore</B> has a <i>kilo</i>, or two pounds, of active carbon. Not single-digit grams. And its can be sealed off from the surroundings, so when its not running, its not depleting. Any off-gassing between prints will likewise be kept inside the filter! And when is does run, it has a lot of VOC binding capacity! At least a hundred times more compared to a generic solder fume carbon mesh filter. 
 
 This is the filter for the low maintenence crowd (who still want to be safe).
 
