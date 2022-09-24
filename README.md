@@ -25,13 +25,21 @@ _300x300mm printbed minimum!_
 **0.2 layers, 0.4 nozzle recommended [0.6+Aarachnae under evaluation]**
 
 PRINTING GUIDE:
+
+
 **FRAME:**
 VERY WARP-PRONE WITH STANDARD ABS! Even if you never have warping issues otherwise, this is at the very edge of plastics cooling stresses. I have printed this successfully with TitanX, other users have had good results with ESun ABS+. As it will never be subject to PETG TG temperatures outside the chamber that can be a good option too. Extra adhesion precautions should be taken (lower z offset with horizontal compensation, nano adhesive, hotter bed or possibly chamber temps, etc). Also dont forget to **tape down your flex bed** or your flex bed may become the warping point instead.
 
+
+
 **PANELS**
+
+
 Panels have A LOT of surface area. If you do not use filament that pops off from the bed when cool - a need to flex your bed to remove parts - there is a certain risk that a thin PEI surface (0.15-0.30 mm thicknesses or therabouts) will be pulled off in spots with high adhesion, causing bubbles in your PEI. If you have thin PEI, or any other thin surface that can be damaged, please use a release layer between the print and bed (my simple household go-to for PEI+ABS is some corn starch dissolved in water and evaporated after being brushed onto the hot bed. Parts will release easily and any starch residue on the print or bed just washes off with water).
 
 **Carbon Baskets**
+
+
 The unbridged mesh extrusions keeping the pellets inside the filter are usually 0.4mm high and 0.8mm wide. They print best if the width is split in two lines (with some overlap, 0.4-0.46 should do it, check in your slicer) and the height is also split in two layers (allowing the first layer to be printed at a slightly lower extrusion multiplier as per bridging settings, and the second be a regular supported layer).
 
 **Other parts**
