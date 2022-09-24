@@ -28,6 +28,7 @@ PRINTING GUIDE:
 
 
 **FRAME:**
+
 VERY WARP-PRONE WITH STANDARD ABS! Even if you never have warping issues otherwise, this is at the very edge of plastics cooling stresses. I have printed this successfully with TitanX, other users have had good results with ESun ABS+. As it will never be subject to PETG TG temperatures outside the chamber that can be a good option too. Extra adhesion precautions should be taken (lower z offset with horizontal compensation, nano adhesive, hotter bed or possibly chamber temps, etc). Also dont forget to **tape down your flex bed** or your flex bed may become the warping point instead.
 
 
