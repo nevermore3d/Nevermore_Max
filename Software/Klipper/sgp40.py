@@ -7,7 +7,7 @@
 import logging
 from . import bus
 from struct import unpack_from
-from voc_algorithm import VOCAlgorithm
+from .voc_algorithm import VOCAlgorithm
 
 SGP40_REPORT_TIME = 1
 SGP40_CHIP_ADDR = 0x59
