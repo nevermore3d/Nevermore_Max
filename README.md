@@ -157,6 +157,7 @@ You're ready to build a Nevermore? Cool! The New Max is a lot simpler to assembl
 
 ### BOM and Sourcing Guide
 For the sourcing guide, details and material list please check this out: [BOM](BOM.md)
+
 Instead of ultra thin bolts, m3 lap top screws seems to work as well and are readily available (https://www.ebay.com/itm/185540026013?var=693379492797)
 
 ### Installation
