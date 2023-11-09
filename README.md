@@ -16,9 +16,11 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-**BETA FILES AND CAD ARE ALL ONLINE** 
+# [Nevermore Stealthmax](https://github.com/nevermore3d/StealthMax) is the final Max release based on beta feedback, Please check it out!
 
+Max had warping issues from the long straight components, which necessitated a frame redesign. This allowed for a built-in exhaust system too driven by the main fan, allowing well-insulated chambers not to overheat when printing PLA and PETG.
 
+<BR><BR><BR><BR><BR><BR>
 _300x300mm print bed minimum!_
 
 
