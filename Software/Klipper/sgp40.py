@@ -91,7 +91,7 @@ class SGP40:
         # Self test
         self_test = self._read_and_check(SGP40_CMD["SELF_TEST"], wait_time_s = 0.5)
         if self_test[0] != 0xD400:
-           logging.exception("sgp40: Self test error")
+           logging.error("sgp40: Self test error")
 		
         self.sample_timer = self.reactor.register_timer(self._sample_sgp40)
 
@@ -187,7 +187,7 @@ class SGP40:
               'temperature': self.temp,
               'humidity': self.humidity,
               'gas': self.raw,
-	      'voc': self.voc
+	      'voc': self.voc * self.voc_scale
             }
 
 
