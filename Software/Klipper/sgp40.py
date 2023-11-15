@@ -15,9 +15,8 @@ SGP40_CHIP_ADDR = 0x59
 SGP40_WORD_LEN = 2
 
 SGP40_CMD = {
-    "INITIALIZE" : [0x36, 0x82],
+    "GET_SERIAL" : [0x36, 0x82],
     "SOFT_RESET" : [0x00, 0x06],
-    "FEATURE_SET" : [0x20, 0x2F],
     "SELF_TEST" : [0x28, 0x0E],
     "MEASURE_RAW_NO_COMP" : [0x26, 0x0F, 0x80, 0x00, 0xA2, 0x66, 0x66, 0x93]
 }
@@ -88,24 +87,12 @@ class SGP40:
         return SGP40_REPORT_TIME
 
     def _init_sgp40(self):
-        # Check serial number
-        serial_number = self._read_and_check(SGP40_CMD["INITIALIZE"], wait_time_s = 0.5)
-        if serial_number[0] != 0x0000:
-            logging.exception("sgp40: Serial number does not match")
-
-        # Feature set
-        # feature_set = self._read_and_check(SGP40_CMD["FEATURE_SET"], wait_time_s = 0.5)
-        # if feature_set[0] != 0x3200:
-        #    logging.exception("sgp40: wrong feature set returned by sensor")
         
         # Self test
-        # self_test = self._read_and_check(SGP40_CMD["SELF_TEST"], wait_time_s = 0.5)
-        # if self_test[0] != 0xD400:
-        #    logging.exception("sgp40: Self test error")
-
-        # Reset
-        # self._read_and_check(SGP40_CMD["SOFT_RESET"], read_len = 0, wait_time_s = 0.5)
-    
+        self_test = self._read_and_check(SGP40_CMD["SELF_TEST"], wait_time_s = 0.5)
+        if self_test[0] != 0xD400:
+           logging.exception("sgp40: Self test error")
+		
         self.sample_timer = self.reactor.register_timer(self._sample_sgp40)
 
     def _sample_sgp40(self, eventtime):
@@ -194,7 +181,7 @@ class SGP40:
     def get_status(self, eventtime):
         # HACKL can only plot on mainsail/fluidd if VOC index is a temperature
         if self.plot_voc:
-            return {"temperature": self.voc }
+            return {"temperature": self.voc * self.voc_scale }
         else:
             return {
               'temperature': self.temp,
