@@ -5,6 +5,7 @@
 # This file may be distributed under the terms of the GNU GPLv3 license.
 
 import logging
+import math
 from . import bus
 from struct import unpack_from
 from .voc_algorithm import VOCAlgorithm
@@ -14,8 +15,8 @@ SGP40_CHIP_ADDR = 0x59
 SGP40_WORD_LEN = 2
 
 SGP40_CMD = {
+    "GET_SERIAL" : [0x36, 0x82],
     "SOFT_RESET" : [0x00, 0x06],
-    "FEATURE_SET" : [0x20, 0x2F],
     "SELF_TEST" : [0x28, 0x0E],
     "MEASURE_RAW_NO_COMP" : [0x26, 0x0F, 0x80, 0x00, 0xA2, 0x66, 0x66, 0x93]
 }
@@ -29,12 +30,14 @@ class SGP40:
             config, default_addr=SGP40_CHIP_ADDR, default_speed=100000)
         self.temp_sensor = config.get('ref_temp_sensor', None)
         self.humidity_sensor = config.get('ref_humidity_sensor', None)
+        self.voc_scale = config.getfloat('voc_scale', 1. )
         self.mcu = self.i2c.get_mcu()
         self.raw = 0
         self.voc = 0
         self.temp = 0
         self.humidity = 0
         self.min_temp = self.max_temp = 0
+        self.plot_voc = config.getboolean('plot_voc', False)
         self.max_sample_time = 1
         self.sample_timer = None
         self.printer.add_object("sgp40 " + self.name, self)
@@ -84,19 +87,12 @@ class SGP40:
         return SGP40_REPORT_TIME
 
     def _init_sgp40(self):
-        # Feature set
-        feature_set = self._read_and_check(SGP40_CMD["FEATURE_SET"], wait_time_s = 0.5)
-        if feature_set[0] != 0x3220:
-            logging.exception("sgp40: wrong feature set returned by sensor")
         
         # Self test
         self_test = self._read_and_check(SGP40_CMD["SELF_TEST"], wait_time_s = 0.5)
         if self_test[0] != 0xD400:
-            logging.exception("sgp40: Self test error")
-
-        # Reset
-        self._read_and_check(SGP40_CMD["SOFT_RESET"], read_len = 0, wait_time_s = 0.5)
-
+           logging.error("sgp40: Self test error")
+		
         self.sample_timer = self.reactor.register_timer(self._sample_sgp40)
 
     def _sample_sgp40(self, eventtime):
@@ -111,8 +107,15 @@ class SGP40:
             except KeyError:
                  self.humidity = 50
         else:
-            # Humidity defaults to 50%
-            self.humidity = 50
+            # Interpolate relative humidity assuming a CLOSED chamber and INITIAL 50% HUMIDITY at 25C;
+	        #   humidity = P(water_vapour) / P(saturation_vapour_pressure)
+            #   
+	        #   Relationship between temp and saturation vapor pressure:
+            #     https://www.engineeringtoolbox.com/water-vapor-saturation-pressure-d_599.html
+            #     
+            #   Approximate change in Saturation Vapor pressure at temperature T [25<T<80]
+	        #     P(Saturation_vapor_pressure_T) / P(Saturation_vapor_pressure_25C) = exp(0.0499860*T - 1.1674630)
+            self.humidity = 50. / math.exp(0.0499860*self.temp - 1.1674630)
         cmd = [0x26, 0x0F] + self._humidity_to_ticks(self.humidity) + self._temperature_to_ticks(self.temp)
         value = self._read_and_check(cmd)
         self.raw = value[0]
@@ -120,7 +123,7 @@ class SGP40:
         self.voc = self._voc_algorithm.vocalgorithm_process(self.raw)
 
         measured_time = self.reactor.monotonic()
-        self._callback(self.mcu.estimated_print_time(measured_time), self.temp)
+        self._callback(self.mcu.estimated_print_time(measured_time), self.voc * self.voc_scale)
         return measured_time + SGP40_REPORT_TIME
 
     def _read_and_check(self, cmd, read_len=1, wait_time_s=0.05):
@@ -176,12 +179,17 @@ class SGP40:
         return crc & 0xFF
 
     def get_status(self, eventtime):
-        return {
-            'temperature': self.temp,
-            'humidity': self.humidity,
-            'gas': self.raw,
-            'voc': self.voc,
-        }
+        # HACKL can only plot on mainsail/fluidd if VOC index is a temperature
+        if self.plot_voc:
+            return {"temperature": self.voc * self.voc_scale }
+        else:
+            return {
+              'temperature': self.temp,
+              'humidity': self.humidity,
+              'gas': self.raw,
+	      'voc': self.voc * self.voc_scale
+            }
+
 
 def load_config(config):
     # Register sensor
